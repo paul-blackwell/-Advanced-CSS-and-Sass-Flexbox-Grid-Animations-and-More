@@ -1,0 +1,23 @@
+{
+  "name": "the-advanced-css-course",
+  "version": "1.0.0",
+  "description": "This repo contains starter files and the finished project files for all the projects contained in the course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackwellweb/-Advanced-CSS-and-Sass-Flexbox-Grid-Animations-and-More.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackwellweb/-Advanced-CSS-and-Sass-Flexbox-Grid-Animations-and-More/issues"
+  },
+  "homepage": "https://github.com/blackwellweb/-Advanced-CSS-and-Sass-Flexbox-Grid-Animations-and-More#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
