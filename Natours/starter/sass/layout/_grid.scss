@@ -1,7 +1,6 @@
 .row {
     // One standards for width is 1140px
     max-width: $grid-width;
-    background-color: #eee;
     margin: 0 auto;
 
     // select everything but the last child
@@ -14,7 +13,6 @@
     // Note: "[]" is a css attribute selector
     // Get all element that start "^=" with class col-
     [class^="col-"]{
-        background-color: orangered;
         float: left;
 
         &:not(:last-child){
