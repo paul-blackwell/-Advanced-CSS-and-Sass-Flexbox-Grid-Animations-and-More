@@ -29,6 +29,10 @@
     &__left {
         width: 33.333333%;
         display: table-cell;
+
+        @include respond(tab-land) { 
+           display: none;
+        }
     }
 
     &__right {
@@ -56,6 +60,10 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto; // Will not work in Chrome
+
+        @include respond(tab-port) { 
+            column-count: 1;
+         }
     }
 
 
