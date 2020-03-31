@@ -168,8 +168,8 @@
 
 
 
-
-    @include respond(tab-port){
+    // Only if screen max max-width: 56.25em or is screen is a touch device
+    @media only screen and (max-width: 56.25em), only screen and (hover:none) { 
            height: auto;
            border-radius: $standard-border-radius;
            background-color: $color-white;
