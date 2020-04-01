@@ -4,7 +4,7 @@
   "description": "This repo contains starter files and the finished project files for all the projects contained in the course.",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass Natours/starter/sass/main.scss Natours/starter/css/style.css -w",
+    "watch:sass": "node-sass Trillo/starter/sass/main.scss Trillo/starter/css/style.css -w",
     "dev": "live-server"
   },
   "repository": {
