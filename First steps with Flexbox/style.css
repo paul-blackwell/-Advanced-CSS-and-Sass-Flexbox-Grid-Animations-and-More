@@ -8,10 +8,18 @@
 .container {
     background-color: #ccc;
     padding: 10px;
+    height: 1000px;
+
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    flex-wrap: wrap;
+
+    /* This will align rows not individual items */
+    align-content: flex-start;
 }
 
 .item {
@@ -37,6 +45,6 @@
 
 
 .i4 {
-    align-self: flex-end;
+    /* align-self: flex-end; */
     order: -1;
 }
