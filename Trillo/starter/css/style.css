@@ -61,7 +61,10 @@ body {
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2); }
+  border-bottom: var(--color-grey-light-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .content {
   display: flex; }
@@ -78,20 +81,39 @@ body {
 /* Logo ------------------------------------------------------------*/
 /*------------------------------------------------------------------*/
 .logo {
-  height: 3.25rem; }
+  height: 3.25rem;
+  margin-left: 3rem; }
 
 /* Search ----------------------------------------------------------*/
 /*------------------------------------------------------------------*/
-.search__icon {
-  height: 2rem;
-  width: 2rem; }
+.search {
+  background-color: orangered;
+  flex: 0 0 40%; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all .5s; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3); }
+  .search__icon {
+    height: 2rem;
+    width: 2rem; }
 
 /* User Navigation -------------------------------------------------*/
 /*------------------------------------------------------------------*/
-.user-nav__icon {
-  height: 2.25rem;
-  width: 2.25rem; }
-
-.user-nav__user-photo {
-  height: 3.75rem;
-  border-radius: 50%; }
+.user-nav {
+  background-color: greenyellow; }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem; }
+  .user-nav__user-photo {
+    height: 3.75rem;
+    border-radius: 50%; }
