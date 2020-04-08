@@ -11,15 +11,28 @@
 
     grid-auto-rows: 80px;
 
+    /* align-items: stretch; is the default */
+    align-items: center;
+
     /* grid-auto-flow: row; is the default */
     /* grid-auto-flow: column; */
     /* grid-auto-columns: .5fr; */
 }
 
 .item {
-    padding: 20px;
+    padding: 10px;
     color: #fff;
     font-family: sans-serif;
     font-size: 30px;
     background-color: orangered;
+}
+
+.item--4 {
+    background-color: crimson;
+    grid-row: 2 / span 3;
+}
+
+.item--7 {
+    background-color: palevioletred;
+    grid-column: 1 / -1;
 }
