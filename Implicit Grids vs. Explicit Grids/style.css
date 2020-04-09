@@ -14,6 +14,8 @@
     /* align-items: stretch; is the default */
     align-items: center;
 
+    justify-items: center;
+
     /* grid-auto-flow: row; is the default */
     /* grid-auto-flow: column; */
     /* grid-auto-columns: .5fr; */
@@ -30,6 +32,8 @@
 .item--4 {
     background-color: crimson;
     grid-row: 2 / span 3;
+    align-self: start;
+    justify-self: start;
 }
 
 .item--7 {
