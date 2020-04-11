@@ -1,25 +1,26 @@
+
 {
   "name": "the-advanced-css-course",
   "version": "1.0.0",
   "description": "This repo contains starter files and the finished project files for all the projects contained in the course.",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass Trillo/starter/sass/main.scss Trillo/starter/css/style.css -w",
-    "dev": "live-server"
+    "watch:sass": "node-sass Nexter/starter/sass/main.scss Nexter/starter/css/style.css -w",
+    "devserver": "live-server --browser=firefox",
+    "start": "npm-run-all --parallel devserver watch:sass",
+
+    "compile:sass": "node-sass Nexter/starter/sass/main.scss Nexter/starter/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass Nexter/starter/css/style.prefix.css Nexter/starter/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/blackwellweb/-Advanced-CSS-and-Sass-Flexbox-Grid-Animations-and-More.git"
-  },
-  "author": "",
+  "author": "Paul",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/blackwellweb/-Advanced-CSS-and-Sass-Flexbox-Grid-Animations-and-More/issues"
-  },
-  "homepage": "https://github.com/blackwellweb/-Advanced-CSS-and-Sass-Flexbox-Grid-Animations-and-More#readme",
-  "dependencies": {},
   "devDependencies": {
-    "live-server": "^1.2.1",
-    "node-sass": "^4.13.1"
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1"
   }
 }
